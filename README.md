@@ -34,9 +34,9 @@ jobs:
               with:
                 user: ${{ user }}
                 host: ${{ host }}
-                port: ${{ port }}
+                port: ${{ port }}   # optional
                 path: ${{ path }}
-                owner: ${{ owner }}
+                owner: ${{ owner }} # optional
               env:
                 DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 

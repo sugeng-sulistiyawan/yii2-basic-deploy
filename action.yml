@@ -19,7 +19,7 @@ inputs:
         required: true
     owner: 
         description: 'Deploy owner'
-        required: true
+        required: false
 runs:
     using: 'docker'
     image: 'Dockerfile'
