@@ -19,7 +19,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@master
+              uses: actions/checkout@v3
 
             - name: Setup Environment
               uses: shivammathur/setup-php@v2
@@ -27,7 +27,7 @@ jobs:
                 php-version: '7.4'
 
             - name: Install Packages
-              run: composer install --no-dev --optimize-autoloader --no-interaction
+              run: composer install --no-progress --prefer-dist --optimize-autoloader --no-interaction
 
             - name: Deploy to Server
               uses: sugeng-sulistiyawan/yii2-basic-deploy@v1
