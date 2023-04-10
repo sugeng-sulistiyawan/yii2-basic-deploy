@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:3.16.5
 
 LABEL maintainer="Sugeng Sulistiyawan sugengsulistiyawan.my.id"
 
