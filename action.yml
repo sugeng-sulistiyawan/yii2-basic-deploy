@@ -3,7 +3,7 @@ description: "Deploy Yii2 Basic Application to Server via SSH by RSync"
 author: "sugeng-sulistiyawan"
 branding:
     icon: "upload-cloud"
-    color: "green"
+    color: "blue"
 inputs:
     user: 
         description: 'Deploy user'

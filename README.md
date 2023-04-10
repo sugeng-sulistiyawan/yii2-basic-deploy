@@ -30,7 +30,7 @@ jobs:
               run: composer install --no-dev --optimize-autoloader --no-interaction
 
             - name: Deploy to Server
-              uses: sugeng-sulistiyawan/yii2-basic-deploy@main
+              uses: sugeng-sulistiyawan/yii2-basic-deploy@v1
               with:
                 user: ${{ user }}
                 host: ${{ host }}
