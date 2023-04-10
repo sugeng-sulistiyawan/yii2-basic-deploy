@@ -1,0 +1,31 @@
+name: "Yii2 Basic Deploy"
+description: "Deploy Yii2 Basic Application to Server via SSH by RSync"
+author: "sugeng-sulistiyawan"
+branding:
+    icon: "upload-cloud"
+    color: "green"
+inputs:
+    user: 
+        description: 'Deploy user'
+        required: true
+    host: 
+        description: 'Deploy host'
+        required: true
+    port: 
+        description: 'Deploy port'
+        required: false
+    path: 
+        description: 'Path source on server'
+        required: true
+    owner: 
+        description: 'Deploy owner'
+        required: true
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        -   ${{ inputs.user }}
+        -   ${{ inputs.host }}
+        -   ${{ inputs.port }}
+        -   ${{ inputs.path }}
+        -   ${{ inputs.owner }}
