@@ -1,10 +1,10 @@
 # Yii2 Basic Deploy
 
-Deploy Yii2 Basic Application to Server via SSH by RSync
+Deploy Yii2 Basic Application to Server via SSH by RSync for Github Actions
 
 ## Config Example:
 
-```
+```yaml
 name: Build and Deploy
 
 on:
@@ -43,3 +43,7 @@ jobs:
             - name: Apply Migration
                 run: php yii migrate --interactive=0
 ```
+
+---
+
+Read more docs: https://sugengsulistiyawan.my.id/docs/opensource/github/yii2-basic-deploy/
