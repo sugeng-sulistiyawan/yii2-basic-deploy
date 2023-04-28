@@ -1,5 +1,5 @@
 name: "Yii2 Basic Deploy"
-description: "Deploy Yii2 Basic Application to Server via SSH by RSync"
+description: "Deploy Yii2 Basic Application to Server via SSH by RSync for Github Actions"
 author: "sugeng-sulistiyawan"
 branding:
     icon: "upload-cloud"
